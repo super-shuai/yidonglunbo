@@ -48,10 +48,10 @@
 <body>
   <div class="wheel">
     <div class="box">
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
+      <a href="javascript:;">1</a>
+      <a href="javascript:;">2</a>
+      <a href="javascript:;">3</a>
+      <a href="javascript:;">4</a>
     </div>
   </div>
 </body>
@@ -64,6 +64,9 @@
     var widths=$(window).width();
 
     $(".wheel").mousedown(function(e){
+      e.preventDefault();
+    })
+    $(".wheel").mousemove(function(e){
       e.preventDefault();
     })
 
